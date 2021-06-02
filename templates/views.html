@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+
+</head>
+<body style="background-image:url('/static/assets/images/view.jfif'); margin:100px">
+
+<h3 style="font-size:50px">Messages</h3>
+<table border=5 style="max-width: 700px;">
+    <thead style="background-color: #20B2AA ; color:white;">
+        <td>ID</td>
+        <td>EMAIL</td>
+        <td>SUBJECT</td>
+        <td>MESSAGE</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["subject"]}}</td>
+            <td>{{row["message"]}}</td>
+        </tr>
+
+    {% endfor %}
+
+</table>
+<br><br>
+<div>
+<a href="/">Go back to home page</a>
+</div>
+<div>
+<a href="/delete">Delete message</a>
+</div>
+</body>
+</html>

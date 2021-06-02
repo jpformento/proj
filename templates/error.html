@@ -1,0 +1,29 @@
+<html>
+<head>
+
+
+    <title>Login</title>
+<link rel="stylesheet" href= "{{ url_for('static',filename='style/nogil.css')}}">
+<link rel="stylesheet" href= "{{ url_for('static',filename='style/nogil1.css')}}">
+
+</head>
+
+   <body style="background-image:url('/static/assets/images/bottom.jpg')">
+
+   <h1>Admin Log-in</h1>
+
+
+      <form method="post" action= "/test">
+         <table style="background-image: url('/static/assets/images/OIP.jfif')" >
+        <tr><td align="right">Name &nbsp;&nbsp;</td> &emsp13;
+        <td><input type ="text" name ="uname"></td></tr>
+        <tr><td align="right">Password</td>
+        <td><input type ="password" name ="pass"></td></tr>
+             <tr><td></td><td align="left"><input type = "submit"></td></tr>
+
+    </table>
+      </form>
+ <p  style="margin-top:200px;color:Red">Credentials Incorrect! Try Again....</p>
+   </body>
+
+</html>
